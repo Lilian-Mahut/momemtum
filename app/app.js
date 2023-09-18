@@ -1,4 +1,6 @@
 // background image (body)
+
+
 // météo (weather)
 const meteoBloc = document.getElementById("weather");
 meteoBloc.textContent = "Météo du jour";
