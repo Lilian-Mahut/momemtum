@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    #location {
+      background-color: grey;
+    }
+    #weather {
+      background-color: green;
+    }
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    #time {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 12rem;
+    }
+    #search {
+      border-radius: 8px;
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
