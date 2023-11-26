@@ -6,17 +6,30 @@
   <link rel="stylesheet" href="/style/style.css">
   <link rel="icon" type="image/x-icon" href="/style/media/favicon-32.png">
   <title>Momentum</title>
-  <script src="/app/app.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" defer></script>
+  <script src="/app.js" defer></script>
+  <!-- <script src="/app/weather.js" defer></script> -->
+  <!-- <script src="/app/time.js" defer></script> -->
+  <!-- <script src="/app/quotes.js" defer></script> -->
 </head>
 <body>
   <header>
     <div id="location"></div>
-    <div id="weather"></div>
+    <div id="weather">
+      <div id="degrees"></div>
+      <div id="picture"></div>
+    </div>
   </header>
   <main>
     <div id="day"></div>
-    <div id="time"></div>
-    <input id="search" type="search" value="Rechercher..."/>
+    <div id="time">
+      <div id="hours"></div>
+      <div id="point">:</div>
+      <div id="minutes"></div>
+      <!-- <div>:</div>
+      <div id="seconds"></div> -->
+    </div>
+    <input id="search" type="search" onfocus="this.value=''" value="Rechercher..."/>
   </main>
   <footer>
     <div id="quote"></div>
