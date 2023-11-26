@@ -5,15 +5,27 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  text-shadow: rgb(0, 0, 0) 0 1px 15px;
+  color: white;
   header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     #location {
-      background-color: grey;
+      margin: 15px 15px 0 0;
+      font-size: 1.1em;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     #weather {
-      background-color: green;
+      display: flex;
+      #degrees {
+        display: flex;
+        align-items: center;
+        font-size: 1.5em;
+      }
+      #picture {
+        margin-left: 15px;
+      }
     }
   }
   main {
@@ -24,6 +36,12 @@ body {
     #time {
       font-family: 'Courier New', Courier, monospace;
       font-size: 12rem;
+      display: flex;
+    #point {
+      position: relative;
+      padding-left: 10px;
+      padding-right: 10px
+      }
     }
     #search {
       border-radius: 8px;
@@ -34,3 +52,4 @@ body {
     justify-content: center;
   }
 }
+

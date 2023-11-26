@@ -5,6 +5,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  text-shadow: rgb(0, 0, 0) 0 1px 15px;
+  color: white;
 }
 body header {
   display: flex;
@@ -12,10 +14,20 @@ body header {
   align-items: flex-end;
 }
 body header #location {
-  background-color: grey;
+  margin: 15px 15px 0 0;
+  font-size: 1.1em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body header #weather {
-  background-color: green;
+  display: flex;
+}
+body header #weather #degrees {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+body header #weather #picture {
+  margin-left: 15px;
 }
 body main {
   display: flex;
@@ -26,6 +38,12 @@ body main {
 body main #time {
   font-family: "Courier New", Courier, monospace;
   font-size: 12rem;
+  display: flex;
+}
+body main #time #point {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 body main #search {
   border-radius: 8px;
