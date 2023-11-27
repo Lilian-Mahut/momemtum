@@ -5,11 +5,7 @@
 </div>
 
 # Made with
-<img src="style/media/html5.png" alt="HTML5">
-<img src="style/media/css.png" alt="CSS3">
-<img src="style/media/javascript.png" alt="JavaScript">
-<img src="style/media/sass.png" alt="Sass">
-<img src="style/media/jquery.png" alt="JQuery">
+<img src="style/media/html5.png" alt="HTML5"><img src="style/media/css.png" alt="CSS3"><img src="style/media/javascript.png" alt="JavaScript"><img src="style/media/sass.png" alt="Sass"><img src="style/media/jquery.png" alt="JQuery">
 
 # License
 MIT
