@@ -1,8 +1,7 @@
 //////////////////////
 /* BACKGROUND-IMAGE */
 //////////////////////
-var x = document.querySelector("body");
-x.style.backgroundImage = "url(\"/style/media/" + Math.floor((Math.random()*4)+1)+".jpg\")";
+$('body').css('background-image', 'url("./style/media/' + Math.floor((Math.random()*4)+1) + ".jpg" + '")');
 
 /////////////
 /* WEATHER */
@@ -40,18 +39,14 @@ $(document).ready(function() {
   const newDate = new Date();
   const dayOfWeek = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
   const monthOfYear = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
-  const dayDiv = document.getElementById("day");
 
   // Date
   newDate.setDate(newDate.getDate());
-  $(dayDiv).html(
+  $("#day").html(
     dayOfWeek[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthOfYear[newDate.getMonth()] + ' ' + newDate.getFullYear()
   );
 
   // Time
-  const timeDiv = document.getElementById("time");
-  $(timeDiv).html()
-  
   setInterval( function() {
     //   var seconds = new Date().getSeconds();
     //   $("#seconds").html(( seconds < 10 ? "0" : "" ) + seconds);
@@ -60,16 +55,17 @@ $(document).ready(function() {
     var hours = new Date().getHours();
     $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
   },1000);
-
 });
 
 ////////////
 /* SEARCH */
 ////////////
-const rechercheBloc = document.getElementById("search");
-
-////////////
-/* QUOTES */
-////////////
-const citationBloc = document.getElementById("quote");
-citationBloc.textContent = "citation";
+$(form).submit(
+  function submitted(event) {
+    var container = document.getElementById("search");
+    event.preventDefault();
+    const url = "https://www.google.com/search?q=" + container.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+);

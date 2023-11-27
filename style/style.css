@@ -1,52 +1,80 @@
+@font-face {
+  font-family: roboto;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: disolve;
+  src: url(./fonts/Disolve_light.ttf);
+}
+@font-face {
+  font-family: squid;
+  src: url(./fonts/Game_of_squids.ttf);
+}
 body {
   background-color: white;
   margin: 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   text-shadow: rgb(0, 0, 0) 0 1px 15px;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
-body header {
+body header #wealoc {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-family: roboto;
 }
-body header #location {
+body header #wealoc #location {
   margin: 15px 15px 0 0;
   font-size: 1.1em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-body header #weather {
+body header #wealoc #weather {
   display: flex;
 }
-body header #weather #degrees {
+body header #wealoc #weather #degrees {
   display: flex;
   align-items: center;
   font-size: 1.5em;
 }
-body header #weather #picture {
+body header #wealoc #weather #picture {
   margin-left: 15px;
 }
 body main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-body main #time {
-  font-family: "Courier New", Courier, monospace;
+body main #tempush {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: squid;
+}
+body main #tempush #time {
+  font-family: disolve;
   font-size: 12rem;
   display: flex;
 }
-body main #time #point {
+body main #tempush #time #point {
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
 }
-body main #search {
-  border-radius: 8px;
+body main #tempush #search {
+  border-radius: 20px;
+  height: 30px;
+  width: 300px;
+  padding: 2px 10px;
+}
+body main #tempush #search ::-moz-placeholder {
+  color: #878585;
+  opacity: 0.7;
+}
+body main #tempush #search ::placeholder {
+  color: #878585;
+  opacity: 0.7;
 }
 body footer {
   display: flex;

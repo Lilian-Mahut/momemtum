@@ -8,31 +8,31 @@
   <title>Momentum</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" defer></script>
   <script src="/app.js" defer></script>
-  <!-- <script src="/app/weather.js" defer></script> -->
-  <!-- <script src="/app/time.js" defer></script> -->
-  <!-- <script src="/app/quotes.js" defer></script> -->
 </head>
 <body>
   <header>
-    <div id="location"></div>
-    <div id="weather">
-      <div id="degrees"></div>
-      <div id="picture"></div>
+    <div id="wealoc">
+      <div id="location"></div>
+      <div id="weather">
+        <div id="degrees"></div>
+        <div id="picture"></div>
+      </div>
     </div>
   </header>
   <main>
-    <div id="day"></div>
-    <div id="time">
-      <div id="hours"></div>
-      <div id="point">:</div>
-      <div id="minutes"></div>
-      <!-- <div>:</div>
-      <div id="seconds"></div> -->
+    <div id="tempush">
+      <div id="day"></div>
+      <div id="time">
+        <div id="hours"></div>
+        <div id="point">:</div>
+        <div id="minutes"></div>
+        <!-- <div>:</div>
+        <div id="seconds"></div> -->
+      </div>
+      <form method="get" id="form">
+        <input id="search" type="search" onfocus="this.value=''" value="Rechercher..."/>
+      </form>
     </div>
-    <input id="search" type="search" onfocus="this.value=''" value="Rechercher..."/>
   </main>
-  <footer>
-    <div id="quote"></div>
-  </footer>
 </body>
 </html>
