@@ -9,5 +9,5 @@
 
 # Template
 <div align="center">
-  <img src="style/media/demo.jpg" alt="demo">
+  <img src="style/media/demo.png" alt="demo">
 </div>
