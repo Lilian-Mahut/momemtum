@@ -1,7 +1,10 @@
 //////////////////////
 /* BACKGROUND-IMAGE */
 //////////////////////
-$('body').css('background-image', 'url("./style/media/' + Math.floor((Math.random()*4)+1) + ".jpg" + '")');
+function changeBody() {
+  $('body').css('background-image', 'url("./style/media/' + Math.floor((Math.random()*4)+1) + ".jpg" + '")')
+};
+setInterval(changeBody, 5000);
 
 /////////////
 /* WEATHER */
