@@ -1,7 +1,7 @@
 <div align="center">
   <img src="style/media/favicon-32.png" alt="Momemtum" width="40" height="40">
   <h3>Momentum - README</h3>
-  <p>One of my first projects, a classic !</p>
+  <p>One of my first projects, a classic!</p>
 
 
 # Made with
